@@ -57,8 +57,9 @@ class _CoffeeListState extends State<CoffeeList> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         elevation: 0,
         leading: const CupertinoNavigationBarBackButton(
           color: Colors.black,
@@ -112,6 +113,7 @@ class _CoffeeListState extends State<CoffeeList> {
                             child: Hero(
                               tag: "text_${coffees[index].name}",
                               child: Material(
+                                color: Colors.white,
                                 child: Text(
                                   coffees[index].name,
                                   maxLines: 2,
