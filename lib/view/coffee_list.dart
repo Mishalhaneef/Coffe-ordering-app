@@ -59,6 +59,7 @@ class _CoffeeListState extends State<CoffeeList> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        surfaceTintColor: Colors.white,
         backgroundColor: Colors.white,
         elevation: 0,
         leading: const CupertinoNavigationBarBackButton(
